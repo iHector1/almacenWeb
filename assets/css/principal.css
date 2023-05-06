@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #0065c3;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.promo-container {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-container1 {
+  position: relative;
+  width: 47.5%;
+  height: auto;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.promo-title {
+  font-size: 2.5rem;
+  position: relative;
+  width: 100%;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+span {
+  display: block;
+}
+
+.promo-container1 p {
+  font-size: 0.85em;
+  position: relative;
+  width: 80%;
+  margin: 1em 0;
+  line-height: 1.25;
+  display: block;
+}
+
+.promo-container1 .cta-btn {
+  position: relative;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  border-radius: 1.8em;
+  border: 2px solid #fff;
+  padding: 0.4em 1.85em;
+  margin-right: 1rem;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+.promo-container1 .cta-btn:hover {
+  background-color: #fff;
+  color: #0065c3;
+}
+
+.promo-container2 {
+  position: relative;
+  width: 47.5%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-container2 img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+  border-style: none;
+}
