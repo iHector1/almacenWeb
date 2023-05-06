@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error404</title>
-    <link rel="stylesheet" href="assets/css/error.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/error.css">
+  <title>Document</title>
 </head>
 <body>
-<div class="moon"></div>
-<div class="moon__crater moon__crater1"></div>
-<div class="moon__crater moon__crater2"></div>
-<div class="moon__crater moon__crater3"></div>
-
-<div class="star star1"></div>
-<div class="star star2"></div>
-<div class="star star3"></div>
-<div class="star star4"></div>
-<div class="star star5"></div>
+<a href="https://codepen.io/ZonFire99/full/njdls/" class="viewFull" target="_parent">View in full it looks way better :)</a>
 
 <div class="error">
-  <div class="error__title">404</div>
-  <div class="error__subtitle">Hmmm...</div>
-  <div class="error__description">It looks like one of the  developers fell asleep</div>
-  <input type= button class="error__button error__button--active" onclick=history.back() name="volver atrás" value="volver atrás">
+
+<div class="wrap">
+  <div class="404">
+    <pre><code>
+	 <span class="green">&lt;!</span><span>DOCTYPE html</span><span class="green">&gt;</span>
+<span class="orange">&lt;html&gt;</span>
+    <span class="orange">&lt;style&gt;</span>
+   * {
+		        <span class="green">everything</span>:<span class="blue">awesome</span>;
+}
+     <span class="orange">&lt;/style&gt;</span>
+ <span class="orange">&lt;body&gt;</span> 
+              ERROR 404!
+				FILE NOT FOUND!
+				<span class="comment">&lt;!--The file you are looking for, 
+					is not where you think it is.--&gt;
+		</span>
+ <span class="orange"></span> 
+			  
 
 
 </div>
+<br />
+<span class="info">
+<br />
 
-<div class="astronaut">
-  <div class="astronaut__backpack"></div>
-  <div class="astronaut__body"></div>
-  <div class="astronaut__body__chest"></div>
-  <div class="astronaut__arm-left1"></div>
-  <div class="astronaut__arm-left2"></div>
-  <div class="astronaut__arm-right1"></div>
-  <div class="astronaut__arm-right2"></div>
-  <div class="astronaut__arm-thumb-left"></div>
-  <div class="astronaut__arm-thumb-right"></div>
-  <div class="astronaut__leg-left"></div>
-  <div class="astronaut__leg-right"></div>
-  <div class="astronaut__foot-left"></div>
-  <div class="astronaut__foot-right"></div>
-  <div class="astronaut__wrist-left"></div>
-  <div class="astronaut__wrist-right"></div>
-  
-  <div class="astronaut__cord">
-    <canvas id="cord" height="500px" width="500px"></canvas>
-  </div>
-  
-  <div class="astronaut__head">
-    <canvas id="visor" width="60px" height="60px"></canvas>
-    <div class="astronaut__head-visor-flare1"></div>
-    <div class="astronaut__head-visor-flare2"></div>
+<span class="orange">&nbsp;&lt;/body&gt;</span>
+
+<br/>
+      <span class="orange">&lt;/html&gt;</span>
+    </code></pre>
   </div>
 </div>
-<script src="assets/js/error.js"></script>
+
+
+</span>
 </body>
 </html>

@@ -32,7 +32,7 @@
               <input type="password" class="form-control" id="password" placeholder="password">
             </div>
             <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Iniciar Sesion</button></div>
-            <div id="emailHelp" class="form-text text-center mb-5 text-dark">No tienes cuenta? <a href="login" class="text-dark fw-bold"> Crear cuenta</a>
+            <div id="emailHelp" class="form-text text-center mb-5 text-dark">No tienes cuenta? <a href="register" class="text-dark fw-bold"> Crear cuenta</a>
             </div>
           </form>
         </div>
