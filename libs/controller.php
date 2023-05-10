@@ -17,4 +17,8 @@
                 $this->model = new $modelName();
             }
         }
+
+        function getPost($name){
+            return $_POST[$name];
+        }
     }
