@@ -1,24 +1,70 @@
 <?php
-    class Controller {
+class Controller
+{
 
-        function __construct() {
+    function __construct()
+    {
 
-            $this->view = new View();
-        }
+        $this->view = new View();
+    }
 
-        function loadModel($model) {
+    function loadModel($model)
+    {
 
-            $url = 'models/'.$model.'model.php';
+        $url = 'models/' . $model . 'model.php';
 
-            if(file_exists($url)) {
-                require $url;
+        if (file_exists($url)) {
+            require $url;
 
-                $modelName = $model.'Model';
-                $this->model = new $modelName();
-            }
-        }
-
-        function getPost($name){
-            return $_POST[$name];
+            $modelName = $model . 'Model';
+            $this->model = new $modelName();
         }
     }
+
+    function getPost($name)
+    {
+        return $_POST[$name];
+    }
+    function existPOST($params)
+    {
+        foreach ($params as $param) {
+            if (!isset($_POST[$param])) {
+                error_log("ExistPOST: No existe el parametro $param");
+                return false;
+            }
+        }
+        error_log("ExistPOST: Existen parámetros");
+        return true;
+    }
+
+    function existGET($params)
+    {
+        foreach ($params as $param) {
+            if (!isset($_GET[$param])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function getGet($name)
+    {
+        return $_GET[$name];
+    }
+
+    function redirect($url, $mensajes = [])
+    {
+        $data = [];
+        $params = '';
+
+        foreach ($mensajes as $key => $value) {
+            array_push($data, $key . '=' . $value);
+        }
+        $params = join('&', $data);
+
+        if ($params != '') {
+            $params = '?' . $params;
+        }
+        header('location: ' . constant('urlsite') . $url . $params);
+    }
+}
