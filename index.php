@@ -14,5 +14,7 @@ require_once 'classes/errors.php';
 require_once 'classes/success.php';
 
 include_once 'models/usermodel.php';
-
+include_once 'models/expensesmodel.php';
+include_once "models/categoriesmodel.php";
+include_once "models/joinexpensescategoriesmodel.php";
 $app = new App();
