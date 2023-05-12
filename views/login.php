@@ -30,11 +30,11 @@
             </div>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="Username" aria-describedby="emailHelp"
-                placeholder="Nombre de usuario">
+              <input type="text" class="form-control" name="username" aria-describedby="emailHelp"
+                placeholder="Nombre de usuario" required>
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" id="password" placeholder="password">
+              <input type="password" class="form-control" name="password" placeholder="password" required>
             </div>
             <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Iniciar Sesion</button>
             </div>
